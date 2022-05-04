@@ -1,0 +1,80 @@
+
+// MobigoSecureUpgrader.h : MobigoSecureUpgrader 응용 프로그램에 대한 주 헤더 파일
+//
+#pragma once
+
+////////////////////////////////////////////////////////////////////////////////
+// include
+////////////////////////////////////////////////////////////////////////////////
+
+#ifndef __AFXWIN_H__
+	#error "PCH에 대해 이 파일을 포함하기 전에 'stdafx.h'를 포함합니다."
+#endif
+
+#include "resource.h"       // 주 기호입니다.
+#include "MobigoTray.h"
+#include "MobigoSecureUpgraderDataMgr.h"
+
+////////////////////////////////////////////////////////////////////////////////
+// define
+////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////
+// macro
+////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////
+// class declare
+////////////////////////////////////////////////////////////////////////////////
+
+class CMobigoSecureUpgraderApp : public CWinApp
+{
+public:
+	CMobigoSecureUpgraderApp();
+
+
+// 재정의입니다.
+public:
+	virtual BOOL		InitInstance();
+	virtual int			ExitInstance();
+
+// 구현입니다.
+    afx_msg void        OnLogOn();
+    afx_msg void        OnLogOff();
+    afx_msg void        OnLogClear();
+    afx_msg void        OnLogFile();
+    afx_msg void        OnSaveConfig();
+	afx_msg void		OnAppAbout();
+	afx_msg void		OnExit();
+    afx_msg void        OnServiceInstall();
+    afx_msg void        OnServiceStart();
+	afx_msg void		OnServiceStop();
+	afx_msg void		OnServiceUninstall();
+
+	DECLARE_MESSAGE_MAP()
+////////////////////////////////////////////////////////////////////////////////
+// member data
+////////////////////////////////////////////////////////////////////////////////
+
+private :
+    CMobigoSecureUpgraderDataMgr*    m_pDataMgr;
+    CMobigoTray                      m_mobigoTray;
+
+    ULONG_PTR                        m_gdiplusToken;
+////////////////////////////////////////////////////////////////////////////////
+// member function
+////////////////////////////////////////////////////////////////////////////////
+
+public:
+// get/set
+public:
+    CMobigoSecureUpgraderDataMgr*   GetDataMgr()                 { return m_pDataMgr;     }; 
+    void                            SetMainWnd( CWnd *pMainWnd ) { m_pMainWnd = pMainWnd; };
+
+	CView*				            GetActiveView();
+	CDocument*			            GetActiveDoc();
+};
+
+extern CMobigoSecureUpgraderApp g_theApp;

@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="1.afx">
+      <UniqueIdentifier>{0311b0ab-ee6b-4c2f-a91d-b3aba9214147}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2.mvc">
+      <UniqueIdentifier>{23493224-6503-43fe-864e-a781eb80b878}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3.util">
+      <UniqueIdentifier>{b1054b40-3154-4c45-bc08-7bf702633d67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3.util\cpp">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="3.util\cpp\zip">
+      <UniqueIdentifier>{a28bd16c-17f8-4216-ba19-c4eca8806d78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3.util\header">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="3.util\header\zip">
+      <UniqueIdentifier>{74060e4c-3333-4345-9876-86dedd3a4f05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="4.resource">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="2.mvc\2.1.header">
+      <UniqueIdentifier>{e00825db-a444-42e5-88e4-fa7f2e4651f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2.mvc\2.2.cpp">
+      <UniqueIdentifier>{d9317e82-c0cb-4c44-a04a-ab4a60f0d7bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2.mvc\2.1.header\model">
+      <UniqueIdentifier>{ce60c2e8-5f0d-46ab-964b-c86b9a67d456}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2.mvc\2.1.header\view">
+      <UniqueIdentifier>{b49e6cae-2c2a-4242-97dc-18a11c15e749}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2.mvc\2.1.header\controller">
+      <UniqueIdentifier>{144a3c66-8cd4-481f-b36f-add65388de4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2.mvc\2.2.cpp\model">
+      <UniqueIdentifier>{152707ca-f8dc-48c0-86ff-c4b63e5e6305}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2.mvc\2.2.cpp\view">
+      <UniqueIdentifier>{dbaea8e3-7faa-491c-a7d9-e4642d5af8f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2.mvc\2.2.cpp\controller">
+      <UniqueIdentifier>{c8216b4c-f99f-4c40-b940-a41d1cc78c3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2.mvc\2.1.header\model\dataMgr">
+      <UniqueIdentifier>{f5643541-fe46-4321-ac37-1530cefc1b7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2.mvc\2.2.cpp\model\dataMgr">
+      <UniqueIdentifier>{5ed8923b-a40c-46c4-a26e-e28db99bc5a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1.afx\1.1.header">
+      <UniqueIdentifier>{76cfc9a7-dc13-484e-b004-7db61b406361}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="1.afx\1.2.cpp">
+      <UniqueIdentifier>{4df9ae29-0ac5-403f-bdbe-713ac0c8969d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2.mvc\2.2.cpp\view\dialog">
+      <UniqueIdentifier>{6970ad2b-b686-4e21-8ca3-e3a62263267f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2.mvc\2.1.header\view\dialog">
+      <UniqueIdentifier>{1c5ccac4-54dd-400f-81ef-bb281185aa9f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MobigoSecureCommon.rc2">
+      <Filter>4.resource</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MobigoSecureCommon.rc">
+      <Filter>4.resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="util\BuildTime.h">
+      <Filter>3.util\header</Filter>
+    </ClInclude>
+    <ClInclude Include="util\MacroXML.h">
+      <Filter>3.util\header</Filter>
+    </ClInclude>
+    <ClInclude Include="util\Util.h">
+      <Filter>3.util\header</Filter>
+    </ClInclude>
+    <ClInclude Include="util\Util2.h">
+      <Filter>3.util\header</Filter>
+    </ClInclude>
+    <ClInclude Include="util\UtilCrypt.h">
+      <Filter>3.util\header</Filter>
+    </ClInclude>
+    <ClInclude Include="util\UtilFile.h">
+      <Filter>3.util\header</Filter>
+    </ClInclude>
+    <ClInclude Include="util\UtilGet.h">
+      <Filter>3.util\header</Filter>
+    </ClInclude>
+    <ClInclude Include="util\UtilHttpGet.h">
+      <Filter>3.util\header</Filter>
+    </ClInclude>
+    <ClInclude Include="util\UtilHttpPost.h">
+      <Filter>3.util\header</Filter>
+    </ClInclude>
+    <ClInclude Include="util\UtilIs.h">
+      <Filter>3.util\header</Filter>
+    </ClInclude>
+    <ClInclude Include="util\UtilJson.h">
+      <Filter>3.util\header</Filter>
+    </ClInclude>
+    <ClInclude Include="util\UtilProg.h">
+      <Filter>3.util\header</Filter>
+    </ClInclude>
+    <ClInclude Include="util\UtilRegKey.h">
+      <Filter>3.util\header</Filter>
+    </ClInclude>
+    <ClInclude Include="util\UtilSys.h">
+      <Filter>3.util\header</Filter>
+    </ClInclude>
+    <ClInclude Include="util\UtilXML.h">
+      <Filter>3.util\header</Filter>
+    </ClInclude>
+    <ClInclude Include="util\UtilZip.h">
+      <Filter>3.util\header</Filter>
+    </ClInclude>
+    <ClInclude Include="util\zip\unzip.h">
+      <Filter>3.util\header\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="util\zip\zip.h">
+      <Filter>3.util\header\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>1.afx\1.1.header</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>1.afx\1.1.header</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>1.afx\1.1.header</Filter>
+    </ClInclude>
+    <ClInclude Include="mvc\model\dataMgr\MyPtrArray.h">
+      <Filter>2.mvc\2.1.header\model\dataMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="mvc\model\dataMgr\MyStringArray.h">
+      <Filter>2.mvc\2.1.header\model\dataMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="mvc\model\dataMgr\PolicyData.h">
+      <Filter>2.mvc\2.1.header\model\dataMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="mvc\model\dataMgr\PolicyDataLoader.h">
+      <Filter>2.mvc\2.1.header\model\dataMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="mvc\model\dataMgr\PolicyItem.h">
+      <Filter>2.mvc\2.1.header\model\dataMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="mvc\model\dataMgr\UpgradeData.h">
+      <Filter>2.mvc\2.1.header\model\dataMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="mvc\model\dataMgr\UpgradeDataLoader.h">
+      <Filter>2.mvc\2.1.header\model\dataMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="mvc\model\dataMgr\UpgradeItem.h">
+      <Filter>2.mvc\2.1.header\model\dataMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="mvc\model\DataMgr.h">
+      <Filter>2.mvc\2.1.header\model</Filter>
+    </ClInclude>
+    <ClInclude Include="mvc\model\dataMgr\AppListData.h">
+      <Filter>2.mvc\2.1.header\model\dataMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="mvc\model\dataMgr\AppItem.h">
+      <Filter>2.mvc\2.1.header\model\dataMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="mvc\model\dataMgr\AppListDataLoader.h">
+      <Filter>2.mvc\2.1.header\model\dataMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="util\UtilMessageBox.h">
+      <Filter>3.util\header</Filter>
+    </ClInclude>
+    <ClInclude Include="util\UtilOS.h">
+      <Filter>3.util\header</Filter>
+    </ClInclude>
+    <ClInclude Include="util\UtilService.h">
+      <Filter>3.util\header</Filter>
+    </ClInclude>
+    <ClInclude Include="util\UtilApp.h">
+      <Filter>3.util\header</Filter>
+    </ClInclude>
+    <ClInclude Include="util\UtilTime.h">
+      <Filter>3.util\header</Filter>
+    </ClInclude>
+    <ClInclude Include="util\UtilAccount.h">
+      <Filter>3.util\header</Filter>
+    </ClInclude>
+    <ClInclude Include="mvc\view\dialog\HtmlMessageBoxDialog.h">
+      <Filter>2.mvc\2.1.header\view\dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="util\UtilEnv.h">
+      <Filter>3.util\header</Filter>
+    </ClInclude>
+    <ClInclude Include="util\UtilFTP.h">
+      <Filter>3.util\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="util\MacroXML.cpp">
+      <Filter>3.util\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="util\Util.cpp">
+      <Filter>3.util\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="util\Util2.cpp">
+      <Filter>3.util\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="util\UtilCrypt.cpp">
+      <Filter>3.util\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="util\UtilFile.cpp">
+      <Filter>3.util\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="util\UtilGet.cpp">
+      <Filter>3.util\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="util\UtilHttpGet.cpp">
+      <Filter>3.util\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="util\UtilHttpPost.cpp">
+      <Filter>3.util\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="util\UtilIs.cpp">
+      <Filter>3.util\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="util\UtilJson.cpp">
+      <Filter>3.util\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="util\UtilProg.cpp">
+      <Filter>3.util\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="util\UtilRegKey.cpp">
+      <Filter>3.util\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="util\UtilSys.cpp">
+      <Filter>3.util\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="util\UtilXML.cpp">
+      <Filter>3.util\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="util\UtilZip.cpp">
+      <Filter>3.util\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="util\zip\unzip.cpp">
+      <Filter>3.util\cpp\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="util\zip\zip.cpp">
+      <Filter>3.util\cpp\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>1.afx\1.2.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="MobigoSecureCommon.cpp">
+      <Filter>1.afx\1.2.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>1.afx\1.2.cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="mvc\model\dataMgr\MyPtrArray.cpp">
+      <Filter>2.mvc\2.2.cpp\model\dataMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="mvc\model\dataMgr\MyStringArray.cpp">
+      <Filter>2.mvc\2.2.cpp\model\dataMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="mvc\model\dataMgr\PolicyData.cpp">
+      <Filter>2.mvc\2.2.cpp\model\dataMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="mvc\model\dataMgr\PolicyDataLoader.cpp">
+      <Filter>2.mvc\2.2.cpp\model\dataMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="mvc\model\dataMgr\PolicyItem.cpp">
+      <Filter>2.mvc\2.2.cpp\model\dataMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="mvc\model\dataMgr\UpgradeData.cpp">
+      <Filter>2.mvc\2.2.cpp\model\dataMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="mvc\model\dataMgr\UpgradeDataLoader.cpp">
+      <Filter>2.mvc\2.2.cpp\model\dataMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="mvc\model\dataMgr\UpgradeItem.cpp">
+      <Filter>2.mvc\2.2.cpp\model\dataMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="mvc\model\DataMgr.cpp">
+      <Filter>2.mvc\2.2.cpp\model</Filter>
+    </ClCompile>
+    <ClCompile Include="mvc\model\dataMgr\AppListData.cpp">
+      <Filter>2.mvc\2.2.cpp\model\dataMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="mvc\model\dataMgr\AppItem.cpp">
+      <Filter>2.mvc\2.2.cpp\model\dataMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="mvc\model\dataMgr\AppListDataLoader.cpp">
+      <Filter>2.mvc\2.2.cpp\model\dataMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="util\UtilMessageBox.cpp">
+      <Filter>3.util\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="util\UtilOS.cpp">
+      <Filter>3.util\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="util\UtilService.cpp">
+      <Filter>3.util\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="util\UtilApp.cpp">
+      <Filter>3.util\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="util\UtilTime.cpp">
+      <Filter>3.util\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="util\UtilAccount.cpp">
+      <Filter>3.util\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="mvc\view\dialog\HtmlMessageBoxDialog.cpp">
+      <Filter>2.mvc\2.2.cpp\view\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="util\UtilEnv.cpp">
+      <Filter>3.util\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="util\UtilFTP.cpp">
+      <Filter>3.util\cpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico">
+      <Filter>4.resource</Filter>
+    </Image>
+    <Image Include="MobigoSecureApp.ico">
+      <Filter>4.resource</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

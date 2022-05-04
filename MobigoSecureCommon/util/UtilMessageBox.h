@@ -1,0 +1,65 @@
+#pragma once
+
+////////////////////////////////////////////////////////////////////////////////
+// reference
+////////////////////////////////////////////////////////////////////////////////
+
+// https://www.codeguru.com/cpp/w-p/win32/messagebox/article.php/c10873/MessageBox-with-Custom-Button-Captions.htm
+// https://www.codeproject.com/Articles/10037/How-to-change-the-MessageBox-window-Add-controls-a
+
+////////////////////////////////////////////////////////////////////////////////
+// include
+////////////////////////////////////////////////////////////////////////////////
+
+#include "UtilSys.h"
+
+////////////////////////////////////////////////////////////////////////////////
+// define
+////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////
+// macro
+////////////////////////////////////////////////////////////////////////////////
+
+#define     ALERT(   __content__, __title__ ) CUtilMessageBox::AlertHtml(   ::GetModuleName(), __content__, __title__ )
+#define     CONFIRM( __content__, __title__ ) CUtilMessageBox::ConfirmHtml( ::GetModuleName(), __content__, __title__ )
+
+////////////////////////////////////////////////////////////////////////////////
+// class declare
+////////////////////////////////////////////////////////////////////////////////
+
+class AFX_EXT_CLASS CUtilMessageBox
+{
+public:
+	CUtilMessageBox(void);
+	~CUtilMessageBox(void);
+
+////////////////////////////////////////////////////////////////////////////////
+// member data
+////////////////////////////////////////////////////////////////////////////////
+
+private :
+    static  HHOOK       m_hhkAlert;
+    static  HHOOK       m_hhkConfirm;
+
+    static  CString     m_strOkBtnText;
+    static  CString     m_strYesBtnText;
+    static  CString     m_strNoBtnText;
+
+////////////////////////////////////////////////////////////////////////////////
+// member function
+////////////////////////////////////////////////////////////////////////////////
+
+// system alert/confirm
+public :	
+    static int                 Alert(   CString strContent, CString strTitle, CString strOkBtnText );
+    static int                 Confirm( CString strContent, CString strTitle, CString strYesBtnText, CString strNoBtnText );
+private :
+    static LRESULT CALLBACK    AlertCallbackProc(INT nCode, WPARAM wParam, LPARAM lParam);
+    static LRESULT CALLBACK    ConfirmCallbackProc(INT nCode, WPARAM wParam, LPARAM lParam);
+
+// html alert/confirm 
+public :
+    static int                 AlertHtml(   CString strModuleName, CString strContent, CString strTitle, CString strOkBtnText  = "" );
+    static int                 ConfirmHtml( CString strModuleName, CString strContent, CString strTitle, CString strYesBtnText = "" , CString strNoBtnText = "" );
+};

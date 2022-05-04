@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{44A0C5AD-0932-46AC-9DE5-AE0EB0DB2F75}</ProjectGuid>
+    <RootNamespace>MobigoSecureCommon</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)$(ProjectName)\;$(SolutionDir)$(ProjectName)\mvc\;$(SolutionDir)$(ProjectName)\mvc\controller\;$(SolutionDir)$(ProjectName)\mvc\model\;$(SolutionDir)$(ProjectName)\mvc\model\dataMgr\;$(SolutionDir)$(ProjectName)\mvc\view\;$(SolutionDir)$(ProjectName)\mvc\view\dialog;$(SolutionDir)$(ProjectName)\util\;$(SolutionDir)$(ProjectName)\util\zip\;$(SolutionDir)library\cryptopp\include;D:\library\boost_1_63_0\boost_1_63_0\include;D:\library\OpenSource\JsonBox\include;$(IncludePath)</IncludePath>
+    <OutDir>C:\MobigoSecure\</OutDir>
+    <LibraryPath>$(SolutionDir)library\cryptopp\lib;D:\library\OpenSource\JsonBox\lib;D:\library\boost_1_63_0\boost_1_63_0\lib32-msvc-12;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)$(ProjectName)\;$(SolutionDir)$(ProjectName)\mvc\;$(SolutionDir)$(ProjectName)\mvc\controller\;$(SolutionDir)$(ProjectName)\mvc\model\;$(SolutionDir)$(ProjectName)\mvc\model\dataMgr\;$(SolutionDir)$(ProjectName)\mvc\view\;$(SolutionDir)$(ProjectName)\mvc\view\dialog;$(SolutionDir)$(ProjectName)\util\;$(SolutionDir)$(ProjectName)\util\zip\;$(SolutionDir)library\cryptopp\include;D:\library\boost_1_63_0\boost_1_63_0\include;D:\library\OpenSource\JsonBox\include;$(IncludePath)</IncludePath>
+    <OutDir>C:\MobigoSecure\</OutDir>
+    <LibraryPath>$(SolutionDir)library\cryptopp\lib;D:\library\OpenSource\JsonBox\lib;D:\library\boost_1_63_0\boost_1_63_0\lib32-msvc-12;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\MobigoSecureCommon.def</ModuleDefinitionFile>
+      <AdditionalDependencies>cryptlib_d.lib;JsonBox-vc120-mtd.lib;Shcore.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>copy /y $(OutputPath)\MobigoSecureCommon.dll $(OutputPath)\upgrader\MobigoSecureCommon.dll
+copy /y $(OutputPath)\MobigoSecureCommon.lib $(OutputPath)\upgrader\MobigoSecureCommon.lib</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\MobigoSecureCommon.def</ModuleDefinitionFile>
+      <AdditionalDependencies>cryptlib.lib;JsonBox-vc120-mt.lib;Shcore.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>copy /y $(OutputPath)\MobigoSecureCommon.dll $(OutputPath)\upgrader\MobigoSecureCommon.dll</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="res\MobigoSecureCommon.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MobigoSecureCommon.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mvc\model\DataMgr.h" />
+    <ClInclude Include="mvc\model\dataMgr\AppItem.h" />
+    <ClInclude Include="mvc\model\dataMgr\AppListData.h" />
+    <ClInclude Include="mvc\model\dataMgr\AppListDataLoader.h" />
+    <ClInclude Include="mvc\model\dataMgr\MyPtrArray.h" />
+    <ClInclude Include="mvc\model\dataMgr\MyStringArray.h" />
+    <ClInclude Include="mvc\model\dataMgr\PolicyData.h" />
+    <ClInclude Include="mvc\model\dataMgr\PolicyDataLoader.h" />
+    <ClInclude Include="mvc\model\dataMgr\PolicyItem.h" />
+    <ClInclude Include="mvc\model\dataMgr\UpgradeData.h" />
+    <ClInclude Include="mvc\model\dataMgr\UpgradeDataLoader.h" />
+    <ClInclude Include="mvc\model\dataMgr\UpgradeItem.h" />
+    <ClInclude Include="mvc\view\dialog\HtmlMessageBoxDialog.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="util\BuildTime.h" />
+    <ClInclude Include="util\MacroXML.h" />
+    <ClInclude Include="util\Util.h" />
+    <ClInclude Include="util\Util2.h" />
+    <ClInclude Include="util\UtilAccount.h" />
+    <ClInclude Include="util\UtilApp.h" />
+    <ClInclude Include="util\UtilCrypt.h" />
+    <ClInclude Include="util\UtilEnv.h" />
+    <ClInclude Include="util\UtilFile.h" />
+    <ClInclude Include="util\UtilFTP.h" />
+    <ClInclude Include="util\UtilGet.h" />
+    <ClInclude Include="util\UtilHttpGet.h" />
+    <ClInclude Include="util\UtilHttpPost.h" />
+    <ClInclude Include="util\UtilIs.h" />
+    <ClInclude Include="util\UtilJson.h" />
+    <ClInclude Include="util\UtilMessageBox.h" />
+    <ClInclude Include="util\UtilOS.h" />
+    <ClInclude Include="util\UtilProg.h" />
+    <ClInclude Include="util\UtilRegKey.h" />
+    <ClInclude Include="util\UtilService.h" />
+    <ClInclude Include="util\UtilSys.h" />
+    <ClInclude Include="util\UtilTime.h" />
+    <ClInclude Include="util\UtilXML.h" />
+    <ClInclude Include="util\UtilZip.h" />
+    <ClInclude Include="util\zip\unzip.h" />
+    <ClInclude Include="util\zip\zip.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="MobigoSecureCommon.cpp" />
+    <ClCompile Include="mvc\model\DataMgr.cpp" />
+    <ClCompile Include="mvc\model\dataMgr\AppItem.cpp" />
+    <ClCompile Include="mvc\model\dataMgr\AppListData.cpp" />
+    <ClCompile Include="mvc\model\dataMgr\AppListDataLoader.cpp" />
+    <ClCompile Include="mvc\model\dataMgr\MyPtrArray.cpp" />
+    <ClCompile Include="mvc\model\dataMgr\MyStringArray.cpp" />
+    <ClCompile Include="mvc\model\dataMgr\PolicyData.cpp" />
+    <ClCompile Include="mvc\model\dataMgr\PolicyDataLoader.cpp" />
+    <ClCompile Include="mvc\model\dataMgr\PolicyItem.cpp" />
+    <ClCompile Include="mvc\model\dataMgr\UpgradeData.cpp" />
+    <ClCompile Include="mvc\model\dataMgr\UpgradeDataLoader.cpp" />
+    <ClCompile Include="mvc\model\dataMgr\UpgradeItem.cpp" />
+    <ClCompile Include="mvc\view\dialog\HtmlMessageBoxDialog.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="util\MacroXML.cpp" />
+    <ClCompile Include="util\Util.cpp" />
+    <ClCompile Include="util\Util2.cpp" />
+    <ClCompile Include="util\UtilAccount.cpp" />
+    <ClCompile Include="util\UtilApp.cpp" />
+    <ClCompile Include="util\UtilCrypt.cpp" />
+    <ClCompile Include="util\UtilEnv.cpp" />
+    <ClCompile Include="util\UtilFile.cpp" />
+    <ClCompile Include="util\UtilFTP.cpp" />
+    <ClCompile Include="util\UtilGet.cpp" />
+    <ClCompile Include="util\UtilHttpGet.cpp" />
+    <ClCompile Include="util\UtilHttpPost.cpp" />
+    <ClCompile Include="util\UtilIs.cpp" />
+    <ClCompile Include="util\UtilJson.cpp" />
+    <ClCompile Include="util\UtilMessageBox.cpp" />
+    <ClCompile Include="util\UtilOS.cpp" />
+    <ClCompile Include="util\UtilProg.cpp" />
+    <ClCompile Include="util\UtilRegKey.cpp" />
+    <ClCompile Include="util\UtilService.cpp" />
+    <ClCompile Include="util\UtilSys.cpp" />
+    <ClCompile Include="util\UtilTime.cpp" />
+    <ClCompile Include="util\UtilXML.cpp" />
+    <ClCompile Include="util\UtilZip.cpp" />
+    <ClCompile Include="util\zip\unzip.cpp" />
+    <ClCompile Include="util\zip\zip.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+    <Image Include="MobigoSecureApp.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="MobigoSecureCommon.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

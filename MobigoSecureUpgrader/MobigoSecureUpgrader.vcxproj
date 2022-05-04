@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="application\appController\MainFrm.cpp" />
+    <ClCompile Include="application\appModel\MobigoSecureUpgraderDataMgr.cpp" />
+    <ClCompile Include="application\appview\aboutDlg\AboutDlg.cpp" />
+    <ClCompile Include="application\appview\dockView\ConfigTreeView.cpp" />
+    <ClCompile Include="application\appview\dockView\CoolMenu.cpp" />
+    <ClCompile Include="application\appview\dockView\DebugControlBar.cpp" />
+    <ClCompile Include="application\appview\dockView\DebugEditView.cpp" />
+    <ClCompile Include="application\appview\dockView\DebugListCtrl.cpp" />
+    <ClCompile Include="application\appview\dockView\DebugListView.cpp" />
+    <ClCompile Include="application\appview\dockView\FileTreeView.cpp" />
+    <ClCompile Include="application\appview\dockView\MyEditView.cpp" />
+    <ClCompile Include="application\appview\dockView\MyListCtrl.cpp" />
+    <ClCompile Include="application\appview\dockView\MyTreeView.cpp" />
+    <ClCompile Include="application\appview\dockView\ProgressEx.cpp" />
+    <ClCompile Include="application\appview\dockView\ProgressStatusBar.cpp" />
+    <ClCompile Include="application\appview\dockView\Sizecbar.cpp" />
+    <ClCompile Include="application\appview\dockView\SizingTabCtrlBar.cpp" />
+    <ClCompile Include="application\appview\dockView\Subclass.cpp" />
+    <ClCompile Include="application\appview\dockView\TreeControlBar.cpp" />
+    <ClCompile Include="application\appview\dockView\WorkspaceTreeView.cpp" />
+    <ClCompile Include="application\appview\dockView\XMLTreeView.cpp" />
+    <ClCompile Include="application\appview\trayView\MobigoTray.cpp" />
+    <ClCompile Include="application\MobigoSecureUpgrader.cpp" />
+    <ClCompile Include="application\stdafx.cpp" />
+    <ClCompile Include="common\MyEnv.cpp" />
+    <ClCompile Include="common\MyMacro.cpp" />
+    <ClCompile Include="common\MyMsg.cpp" />
+    <ClCompile Include="uiThread\uiController\UiController.cpp" />
+    <ClCompile Include="uiThread\uiController\UiTddController.cpp" />
+    <ClCompile Include="uiThread\uiModel\UiDoc.cpp" />
+    <ClCompile Include="uiThread\uiView\downloadDlg\BindStatusCallback.cpp" />
+    <ClCompile Include="uiThread\uiView\downloadDlg\DownloadDlg.cpp" />
+    <ClCompile Include="uiThread\uiView\downloadDlg\LogEdit.cpp" />
+    <ClCompile Include="uiThread\uiView\splashDlg\colorText\ColorStatic.cpp" />
+    <ClCompile Include="uiThread\uiView\splashDlg\pngButton\GdipButton.cpp" />
+    <ClCompile Include="uiThread\uiView\splashDlg\SplashDlg.cpp" />
+    <ClCompile Include="uiThread\uiView\splashDlg\textProgress\TextProgressCtrl.cpp" />
+    <ClCompile Include="uiThread\uiView\splashStep\FirstStepSplash.cpp" />
+    <ClCompile Include="uiThread\uiView\splashStep\SecondStepSplash.cpp" />
+    <ClCompile Include="uiThread\uiView\splashStep\StepSplash.cpp" />
+    <ClCompile Include="uiThread\uiView\splashStep\ThirdStepSplash.cpp" />
+    <ClCompile Include="uiThread\uiView\UiDebugView.cpp" />
+    <ClCompile Include="uiThread\uiView\UiReleaseView.cpp" />
+    <ClCompile Include="uiThread\uiView\UiSplashView.cpp" />
+    <ClCompile Include="uiThread\uiView\zipDlg\Zip2DirDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="application\appController\MainFrm.h" />
+    <ClInclude Include="application\appModel\MobigoSecureUpgraderDataMgr.h" />
+    <ClInclude Include="application\appview\aboutDlg\AboutDlg.h" />
+    <ClInclude Include="application\appview\dockView\ConfigTreeView.h" />
+    <ClInclude Include="application\appview\dockView\CoolMenu.h" />
+    <ClInclude Include="application\appview\dockView\DebugControlBar.h" />
+    <ClInclude Include="application\appview\dockView\DebugEditView.h" />
+    <ClInclude Include="application\appview\dockView\DebugListCtrl.h" />
+    <ClInclude Include="application\appview\dockView\DebugListView.h" />
+    <ClInclude Include="application\appview\dockView\FileTreeView.h" />
+    <ClInclude Include="application\appview\dockView\MyEditView.h" />
+    <ClInclude Include="application\appview\dockView\MyListCtrl.h" />
+    <ClInclude Include="application\appview\dockView\MyTreeView.h" />
+    <ClInclude Include="application\appview\dockView\ProgressEx.h" />
+    <ClInclude Include="application\appview\dockView\ProgressStatusBar.h" />
+    <ClInclude Include="application\appview\dockView\Sizecbar.h" />
+    <ClInclude Include="application\appview\dockView\SizingTabCtrlBar.h" />
+    <ClInclude Include="application\appview\dockView\Subclass.h" />
+    <ClInclude Include="application\appview\dockView\TreeControlBar.h" />
+    <ClInclude Include="application\appview\dockView\WorkspaceTreeView.h" />
+    <ClInclude Include="application\appview\dockView\XMLTreeView.h" />
+    <ClInclude Include="application\appview\trayView\MobigoTray.h" />
+    <ClInclude Include="application\MobigoSecureUpgrader.h" />
+    <ClInclude Include="application\Resource.h" />
+    <ClInclude Include="application\stdafx.h" />
+    <ClInclude Include="application\targetver.h" />
+    <ClInclude Include="common\MyEnv.h" />
+    <ClInclude Include="common\MyFeatures.h" />
+    <ClInclude Include="common\MyMacro.h" />
+    <ClInclude Include="common\MyMsg.h" />
+    <ClInclude Include="uiThread\uiController\UiController.h" />
+    <ClInclude Include="uiThread\uiController\UiTddController.h" />
+    <ClInclude Include="uiThread\uiModel\UiDoc.h" />
+    <ClInclude Include="uiThread\uiView\downloadDlg\BindStatusCallback.h" />
+    <ClInclude Include="uiThread\uiView\downloadDlg\DownloadDlg.h" />
+    <ClInclude Include="uiThread\uiView\downloadDlg\LogEdit.h" />
+    <ClInclude Include="uiThread\uiView\splashDlg\colorText\ColorStatic.h" />
+    <ClInclude Include="uiThread\uiView\splashDlg\pngButton\CGdiPlusBitmap.h" />
+    <ClInclude Include="uiThread\uiView\splashDlg\pngButton\GdipButton.h" />
+    <ClInclude Include="uiThread\uiView\splashDlg\pngButton\MemDC.h" />
+    <ClInclude Include="uiThread\uiView\splashDlg\SplashDlg.h" />
+    <ClInclude Include="uiThread\uiView\splashDlg\textProgress\TextProgressCtrl.h" />
+    <ClInclude Include="uiThread\uiView\splashStep\FirstStepSplash.h" />
+    <ClInclude Include="uiThread\uiView\splashStep\SecondStepSplash.h" />
+    <ClInclude Include="uiThread\uiView\splashStep\StepSplash.h" />
+    <ClInclude Include="uiThread\uiView\splashStep\ThirdStepSplash.h" />
+    <ClInclude Include="uiThread\uiView\UiDebugView.h" />
+    <ClInclude Include="uiThread\uiView\UiReleaseView.h" />
+    <ClInclude Include="uiThread\uiView\UiSplashView.h" />
+    <ClInclude Include="uiThread\uiView\zipDlg\Zip2DirDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="application\res\MobigoSecureUpgrader.ico" />
+    <Image Include="application\res\MobigoSecureUpgraderDoc.ico" />
+    <Image Include="application\res\res\BarAqua.bmp" />
+    <Image Include="application\res\res\BarLuna.bmp" />
+    <Image Include="application\res\res\BarPhoton.bmp" />
+    <Image Include="application\res\res\bug.bmp" />
+    <Image Include="application\res\res\build.bmp" />
+    <Image Include="application\res\res\checkbox_off.bmp" />
+    <Image Include="application\res\res\checkbox_on.bmp" />
+    <Image Include="application\res\res\clear.bmp" />
+    <Image Include="application\res\res\debug.bmp" />
+    <Image Include="application\res\res\dice_1.bmp" />
+    <Image Include="application\res\res\dice_2.bmp" />
+    <Image Include="application\res\res\dice_3.bmp" />
+    <Image Include="application\res\res\dice_4.bmp" />
+    <Image Include="application\res\res\dice_5.bmp" />
+    <Image Include="application\res\res\dice_6.bmp" />
+    <Image Include="application\res\res\feature_phone.bmp" />
+    <Image Include="application\res\res\folder.bmp" />
+    <Image Include="application\res\res\gray_ball.bmp" />
+    <Image Include="application\res\res\green_ball.bmp" />
+    <Image Include="application\res\res\htm.bmp" />
+    <Image Include="application\res\res\java.bmp" />
+    <Image Include="application\res\res\LG.bmp" />
+    <Image Include="application\res\res\Log.bmp" />
+    <Image Include="application\res\res\Log_1.bmp" />
+    <Image Include="application\res\res\message_box.bmp" />
+    <Image Include="application\res\res\mobigo.bmp" />
+    <Image Include="application\res\res\mobigo_secure_icon.png" />
+    <Image Include="application\res\res\mobigo_secure_logo.png" />
+    <Image Include="application\res\res\pattern.bmp" />
+    <Image Include="application\res\res\samsung.bmp" />
+    <Image Include="application\res\res\setting.bmp" />
+    <Image Include="application\res\res\smart_phone.bmp" />
+    <Image Include="application\res\res\stop.bmp" />
+    <Image Include="application\res\res\test_tube.bmp" />
+    <Image Include="application\res\res\transfer.bmp" />
+    <Image Include="application\res\res\tray_1.ico" />
+    <Image Include="application\res\res\tray_2.ico" />
+    <Image Include="application\res\res\tray_3.ico" />
+    <Image Include="application\res\res\tray_4.ico" />
+    <Image Include="application\res\res\unknown.bmp" />
+    <Image Include="application\res\res\upgrade.bmp" />
+    <Image Include="application\res\res\upgrader_splash.bmp" />
+    <Image Include="application\res\res\workspace.bmp" />
+    <Image Include="application\res\Toolbar.bmp" />
+    <Image Include="application\res\Toolbar256.bmp" />
+    <Image Include="application\res\UserImages.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="application\res\MobigoSecureUpgrader.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="application\res\MobigoSecureUpgrader.rc2" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D4158CAF-7FEB-45D0-AA9E-B9C166CB5961}</ProjectGuid>
+    <RootNamespace>MobigoSecureUpgrader</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)$(ProjectName)\application\;$(SolutionDir)$(ProjectName)\application\appView\;$(SolutionDir)$(ProjectName)\application\appView\aboutDlg\;$(SolutionDir)$(ProjectName)\application\appView\dockView\;$(SolutionDir)$(ProjectName)\application\appView\trayView\;$(SolutionDir)$(ProjectName)\application\appModel\;$(SolutionDir)$(ProjectName)\application\appController\;$(SolutionDir)$(ProjectName)\uiThread\;$(SolutionDir)$(ProjectName)\uiThread\uiController\;$(SolutionDir)$(ProjectName)\uiThread\uiModel\;$(SolutionDir)$(ProjectName)\uiThread\uiView\;$(SolutionDir)$(ProjectName)\uiThread\uiView\downloadDlg\;$(SolutionDir)$(ProjectName)\uiThread\uiView\splashDlg\;$(SolutionDir)$(ProjectName)\uiThread\uiView\splashDlg\colorText\;$(SolutionDir)$(ProjectName)\uiThread\uiView\splashDlg\pngButton\;$(SolutionDir)$(ProjectName)\uiThread\uiView\splashDlg\textProgress\;$(SolutionDir)$(ProjectName)\uiThread\uiView\splashStep\;$(SolutionDir)$(ProjectName)\uiThread\uiView\zipDlg\;$(SolutionDir)$(ProjectName)\common\;$(SolutionDir)MobigoSecureCommon\mvc\;$(SolutionDir)MobigoSecureCommon\mvc\controller\;$(SolutionDir)MobigoSecureCommon\mvc\model\;$(SolutionDir)MobigoSecureCommon\mvc\model\dataMgr\;$(SolutionDir)MobigoSecureCommon\mvc\view\;$(SolutionDir)MobigoSecureCommon\util\;$(SolutionDir)MobigoSecureDebugger\src\;D:\library\boost_1_63_0\boost_1_63_0\include;D:\library\OpenSource\JsonBox\include;$(IncludePath)</IncludePath>
+    <OutDir>C:\MobigoSecure\upgrader</OutDir>
+    <LibraryPath>$(OutDir);D:\library\boost_1_63_0\boost_1_63_0\lib32-msvc-12;D:\library\OpenSource\JsonBox\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)$(ProjectName)\application\;$(SolutionDir)$(ProjectName)\application\appView\;$(SolutionDir)$(ProjectName)\application\appView\aboutDlg\;$(SolutionDir)$(ProjectName)\application\appView\dockView\;$(SolutionDir)$(ProjectName)\application\appView\trayView\;$(SolutionDir)$(ProjectName)\application\appModel\;$(SolutionDir)$(ProjectName)\application\appController\;$(SolutionDir)$(ProjectName)\uiThread\;$(SolutionDir)$(ProjectName)\uiThread\uiView\;$(SolutionDir)$(ProjectName)\uiThread\uiView\downloadDlg\;$(SolutionDir)$(ProjectName)\uiThread\uiView\splashDlg\;$(SolutionDir)$(ProjectName)\uiThread\uiView\splashDlg\colorText\;$(SolutionDir)$(ProjectName)\uiThread\uiView\splashDlg\pngButton\;$(SolutionDir)$(ProjectName)\uiThread\uiView\splashDlg\textProgress\;$(SolutionDir)$(ProjectName)\uiThread\uiView\splashStep\;$(SolutionDir)$(ProjectName)\uiThread\uiView\zipDlg\;$(SolutionDir)$(ProjectName)\uiThread\uiModel\;$(SolutionDir)$(ProjectName)\uiThread\uiController\;$(SolutionDir)$(ProjectName)\common\;$(SolutionDir)MobigoSecureCommon\mvc\;$(SolutionDir)MobigoSecureCommon\mvc\controller\;$(SolutionDir)MobigoSecureCommon\mvc\model\;$(SolutionDir)MobigoSecureCommon\mvc\model\dataMgr\;$(SolutionDir)MobigoSecureCommon\mvc\view\;$(SolutionDir)MobigoSecureCommon\util\;$(SolutionDir)MobigoSecureDebugger\src\;D:\library\boost_1_63_0\boost_1_63_0\include;D:\library\OpenSource\JsonBox\include;$(IncludePath)</IncludePath>
+    <OutDir>C:\MobigoSecure\upgrader</OutDir>
+    <LibraryPath>$(OutDir);D:\library\boost_1_63_0\boost_1_63_0\lib32-msvc-12;D:\library\OpenSource\JsonBox\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>MobigoSecureCommon.lib;MobigoSecureDebugger.lib;JsonBox-vc120-mtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\MobigoSecure</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>MobigoSecureCommon.lib;MobigoSecureDebugger.lib;JsonBox-vc120-mt.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\MobigoSecure</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="application\res\MobigoSecureUpgrader.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
